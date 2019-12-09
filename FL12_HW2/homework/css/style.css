@@ -115,6 +115,25 @@
   animation-fill-mode: forwards;
 }
 
+.tm-content-box.flex-2-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-content-box.flex-2-col h2 {
+  text-align: center;
+}
+
+.gallery-container .box-bg:hover{
+  background-color: lightgray;
+  font-style: italic;
+}
+
+.gallery-container .box-bg:hover h2{
+  color: lightskyblue;
+}
+
 @keyframes moveText {
   from {
     transform: translateX(200px);
