@@ -194,6 +194,66 @@ p.tm-section-description {
   line-height: 30px;
 }
 
+.form-control:not(textarea) {
+  border: none;
+  border-bottom: 2px solid lightskyblue;
+}
+
+.form-control:not(textarea):focus {
+  background-color: lightskyblue;
+}
+
+textarea.form-control {
+  border-color: lightskyblue;
+}
+
+.contact-form div {
+  position: relative;
+}
+
+.contact-form div:last-of-type::before {
+  background-image: url('../img/email-icon.png');
+  background-size: 40px 40px;
+  position: absolute;
+  content: "";
+  width: 40px;
+  height:40px;
+  bottom: 10px;
+  right: 10px;
+}
+
+textarea.form-control:focus {
+  border-color: lightskyblue;
+  box-shadow: none;
+}
+
+.tm-sidebar,
+.tm-content-box,
+.blocks {
+  box-shadow: 6px 2px 10px rgba(61, 55, 61, 0.7);
+}
+
+.blocks div:nth-child(2){
+  display: none;
+}
+
+.blocks::before,
+.tm-content-box::before {
+  content: "";
+  background-image: linear-gradient(135deg, lightskyblue 50%, transparent 50%);
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index: 2;
+}
+
+.tm-content-box,
+.blocks {
+  position: relative
+}
+
 
 
 
