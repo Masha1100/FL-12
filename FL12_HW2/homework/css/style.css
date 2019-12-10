@@ -134,6 +134,70 @@
   color: lightskyblue;
 }
 
+.padding-medium>h2 {
+  color: lightskyblue;
+}
+
+.padding-medium>h2:not(.tm-section-title) {
+  text-align: center;
+  color: lightskyblue;
+}
+
+.padding-medium>ol {
+  list-style: lower-alpha;
+}
+
+.padding-medium>ol>li {
+  position: relative;
+}
+
+.padding-medium>ol>li:hover::before {
+  content: "\003e";
+  display: inline-block;
+}
+
+.padding-medium>ol>li:first-child::after,
+.padding-medium>ol>li:nth-child(3)::after{
+  content: "New";
+  font-variant: small-caps;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+}
+
+.blocks .padding-medium >p.tm-section-description:last-child {
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  font-style: italic;
+}
+
+.box.box-work {
+  padding: 10px;
+}
+
+.box.box-work p{
+  font-style: italic;
+}
+
+.box.box-work p::first-letter{
+  font-weight: bold;
+}
+
+.box.box-work:nth-child(2n+1) {
+  background: #87CEFA;
+  color: #fff;
+}
+
+p.tm-section-description {
+  text-indent: 25px;
+  line-height: 30px;
+}
+
+
+
+
+
 @keyframes moveText {
   from {
     transform: translateX(200px);
