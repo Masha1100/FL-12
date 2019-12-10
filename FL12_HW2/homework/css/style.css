@@ -238,7 +238,11 @@ textarea.form-control:focus {
 }
 
 .blocks::before,
-.tm-content-box::before {
+.heading::before,
+#ideas::before,
+section.tm-content-box::before,
+section>.tm-content-box.flex-2-col::before
+ {
   content: "";
   background-image: linear-gradient(135deg, lightskyblue 50%, transparent 50%);
   width: 50px;
@@ -249,8 +253,11 @@ textarea.form-control:focus {
   z-index: 2;
 }
 
-.tm-content-box,
-.blocks {
+.blocks,
+.heading,
+#ideas,
+section.tm-content-box,
+section>.tm-content-box.flex-2-col {
   position: relative
 }
 
