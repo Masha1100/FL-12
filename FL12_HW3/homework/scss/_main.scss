@@ -13,10 +13,33 @@ body{
 }
 
 @mixin link {
-  color: $link-color;
   text-decoration: underline;
 }
 
+@mixin btn {
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: $btn-color;
+  color: $white-color;
+}
+
+
 a.section_link {
   @include link();
+  color: $link-color;
+}
+
+a.login{
+  @include link();
+  color: $white-color;
+}
+
+.header {
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

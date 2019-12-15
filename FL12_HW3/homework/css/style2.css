@@ -11,5 +11,15 @@ body {
   padding-right: 15px; }
 
 a.section_link {
-  color: #d1d1c9;
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #d1d1c9; }
+
+a.login {
+  text-decoration: underline;
+  color: #ffffff; }
+
+.header {
+  background-image: url("../img/m-h-night.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
