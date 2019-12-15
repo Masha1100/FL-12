@@ -5,11 +5,12 @@
 }
 
 body{
-  max-width: 1920px;
+  width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: $body-color;
+  font-family: map-get($map, font-1);
+  font-size: 16px;
 }
 
 @mixin link {
@@ -18,12 +19,14 @@ body{
 
 @mixin btn {
   display: inline-flex;
-  width: 150px;
-  height: 50px;
+  width: 146px;
+  height: 46px;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
   background-color: $btn-color;
   color: $white-color;
+  font-family: map-get($map, font-2);
 }
 
 
@@ -37,9 +40,100 @@ a.login{
   color: $white-color;
 }
 
+.landing-logo{
+      display: flex;
+      align-items: flex-start;
+      p{
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 15px;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 1.5;
+        span{
+          display: block;
+          font-size: 12px;
+          font-weight: normal;
+          letter-spacing: normal;
+        }
+      }
+}
+
 .header {
   background-image: $bg-image;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 91% 96%, 79% 99%, 63% 100%, 0% 100%);
+  &-wrap{
+    max-width: 900px;
+    margin-left: 190px;
+    padding-top: 20px;
+    font-family: map-get($map, font-1);
+    .landing-logo{
+      @extend.landing-logo;
+    }
+    .header_heading{
+        margin-top: 70px;
+        font-size: 72px;
+        color: $title-color;
+        font-weight: bold;
+        max-width: 550px;
+        line-height: 1;
+        font-family: map-get($map, font-2);
+    }
+    .header_text{
+        margin-top: 35px;
+        white-space: pre-line;
+        &+div {
+          margin-top: 55px;
+          padding-bottom: 175px;
+      }
+    }
+    .header_button {
+      @include btn();
+      margin-right: 145px;
+    }
+    .login{
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    
+  }
+}
+.section {
+  padding-top: 35px;
+
+  .section_text {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .section_card_wrap {
+    margin: 0 auto;
+    width: 1115px;
+    margin-top: 25px;
+    .section_card {
+      border-radius: 10px;
+      margin-bottom: 25px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 435px 1fr;
+      grid-gap: 85px;
+      background-color: $block-color;
+      .section_card_img {
+        display: block;
+        width: 100%;
+        height: 285px;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+}
+
+.footer_logo {
+  @extend.landing-logo;
 }
