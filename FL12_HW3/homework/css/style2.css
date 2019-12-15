@@ -9,3 +9,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; }
+
+a.section_link {
+  color: #d1d1c9;
+  text-decoration: underline; }

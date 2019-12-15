@@ -11,3 +11,12 @@ body{
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@mixin link {
+  color: $link-color;
+  text-decoration: underline;
+}
+
+a.section_link {
+  @include link();
+}
