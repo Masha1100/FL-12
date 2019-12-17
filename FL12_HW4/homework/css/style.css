@@ -10,6 +10,7 @@ body {
   position: relative;
   font-size: 14px;
   color: #777777;
+  padding-bottom: 0px;
 }
 
 .container {
