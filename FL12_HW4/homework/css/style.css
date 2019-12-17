@@ -112,5 +112,39 @@ body {
 .blog_title {
   font-size: 36px;
   color: #000000;
+  margin: 20px 0;
+}
+
+.blog_info {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.blog_info img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.blog_info {
+  display: flex;
+  align-items: center;
+}
+
+.blog_info span {
+  padding: 5px;
+}
+
+.blog-btn {
+  text-transform: capitalize;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #777777;
+  border-color: #777777;
+  border: 1px solid #777777;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
 }
 
