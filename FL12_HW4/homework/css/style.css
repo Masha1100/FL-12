@@ -148,3 +148,14 @@ body {
   font-weight: bold;
 }
 
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px
+}
+
