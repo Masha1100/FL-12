@@ -12,6 +12,8 @@
 
 body {
   font-family: roboto;
+  background-color: #0b192f;
+  font-size: 14px;
 }
 .post-1 {
 	background: #9d27b0;
@@ -27,6 +29,55 @@ body {
 }
 .post-5 {
 	background: #2d95bb;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  background-color: #024161;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.header__logo {
+  font-size: 2em;
+}
+.header__logo span{
+  color: #D12767;
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav a{
+  display: inline-flex;
+  padding: 0 20px;
+  height: 55px;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__nav a:hover{
+  background-color: #1f52a4;
 }
 
 /* Your styles go here */
