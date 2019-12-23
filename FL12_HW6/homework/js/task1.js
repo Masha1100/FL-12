@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-catch */
 let a = prompt('Enter number a', '');
 a = parseInt(a, 10);
 if(a === null || isNaN(a)){
