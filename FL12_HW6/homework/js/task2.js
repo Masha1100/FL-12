@@ -1,4 +1,5 @@
 let a = Number(prompt('Enter number a'));
+console.log(a);
 if (a === null || a === '' || a === undefined || isNaN(a)) {
   alert('input values should be ONLY numbers');
 }
@@ -13,9 +14,7 @@ if (c === null || c === '' || c === undefined || isNaN(c)){
 
 if(a===0 ||b===0 ||c===0){
     alert('A triangle must have 3 sides with a positive definite length ');
-}
-
-if (a < 0 || b < 0 || c < 0) {
+} else if (a < 0 || b < 0 || c < 0) {
   console.log('Triangle doesn’t exist ');
 } else if(a===b && b===c && c===a){
   console.log('Equilateral triangle');
