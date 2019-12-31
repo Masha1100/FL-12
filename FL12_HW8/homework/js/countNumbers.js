@@ -8,4 +8,4 @@ function countNumbers(str) {
   return obj
 }
 
-console.log(countNumbers('erer384jj4444666888jfd123'));
+countNumbers('erer384jj4444666888jfd123');
